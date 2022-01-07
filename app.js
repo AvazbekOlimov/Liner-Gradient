@@ -36,8 +36,9 @@ function colors() {
 
   const mixer1 = adder()
   const mixer2 = adder()
+  const mixer3 = adder()
   const randomDeg = Math.floor(Math.random() * 360 + 1)
-  const linearGrad = `linear-gradient(${randomDeg}deg, #${mixer1} , #${mixer2})`
+  const linearGrad = `linear-gradient(${randomDeg}deg, #${mixer1} , #${mixer2}, #${mixer3})`
   lineGrad.innerText = linearGrad
   document.body.style.background = linearGrad
 }
